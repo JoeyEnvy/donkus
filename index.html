@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donkus Restaurant - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #222;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-image: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .about, .services, .testimonials, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .about {
+            background-color: #444;
+        }
+        .services {
+            background-color: #555;
+        }
+        .testimonials {
+            background-color: #666;
+        }
+        .contact {
+            background-color: #333;
+        }
+        .services h2, .testimonials h2, .contact h2 {
+            margin-bottom: 30px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .service-item, .testimonial-item {
+            background: #777;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .service-item img, .testimonial-item img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #111;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Donkus</a>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Donkus</h1>
+                <p>Experience an exquisite culinary journey with us.</p>
+                <a href="#" class="btn">Book a Table</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Donkus is not just a restaurant; it's a delightful escape into the world of fine dining. Our mission is to offer an unparalleled dining experience that tantalizes your taste buds and leaves you craving for more. Whether you are a food connoisseur or someone seeking a memorable meal, Donkus is the place to be.</p>
+            <ul>
+                <li>Exquisite culinary creations</li>
+                <li>Warm and inviting atmosphere</li>
+                <li>Exceptional customer service</li>
+                <li>Locally sourced ingredients</li>
+            </ul>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Gourmet Cuisine">
+                    <h3>Gourmet Cuisine</h3>
+                    <p>Experience the finest dishes crafted by our world-class chefs.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Private Events">
+                    <h3>Private Events</h3>
+                    <p>Host your special occasions in our exclusive event space.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1522770179533-24471fcdba45" alt="Wine Selection">
+                    <h3>Wine Selection</h3>
+                    <p>Choose from an extensive collection of fine wines.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-item">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Customer 1">
+                <p>"An unforgettable dining experience! The food was exquisite and the service was impeccable." - John Doe</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" alt="Customer 2">
+                <p>"Donkus is my go-to place for celebrating special moments. The ambiance and cuisine are top-notch." - Jane Smith</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>For reservations and inquiries, please reach out to us:</p>
+            <p>Email: contact@donkus.com | Phone: (123) 456-7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Donkus Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>
+
+
+---

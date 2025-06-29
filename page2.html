@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donkus Restaurant - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #222;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            padding: 50px;
+            background-image: url('https://images.unsplash.com/photo-1447078806655-40579c2520d6');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .services-overview, .special-offers, .booking, .reviews, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .services-overview {
+            background-color: #444;
+        }
+        .special-offers {
+            background-color: #555;
+        }
+        .booking {
+            background-color: #666;
+        }
+        .reviews {
+            background-color: #777;
+        }
+        .contact {
+            background-color: #333;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .service-item, .booking-item, .review-item {
+            background: #888;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .service-item img, .booking-item img, .review-item img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #111;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Donkus</a>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Our Services</h1>
+            <p>Discover the range of exceptional services we offer at Donkus.</p>
+        </section>
+
+        <section class="services-overview">
+            <h2>Services Overview</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Dining Experience">
+                    <h3>Dining Experience</h3>
+                    <p>Enjoy our signature dishes in an elegant setting.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187" alt="Catering Services">
+                    <h3>Catering Services</h3>
+                    <p>Let us cater your next event with style and flavor.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Cooking Classes">
+                    <h3>Cooking Classes</h3>
+                    <p>Join our chefs and learn to make gourmet meals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <h2>Special Offers</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468" alt="Weekend Brunch">
+                    <h3>Weekend Brunch</h3>
+                    <p>Indulge in our special weekend brunch menu.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://images.unsplash.com/photo-1585238342023-3b0e889e071e" alt="Wine Tasting">
+                    <h3>Wine Tasting</h3>
+                    <p>Explore our exquisite selection of wines.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking">
+            <h2>Booking</h2>
+            <p>Reserve a table with us for an unforgettable dining experience.</p>
+            <div class="booking-item">
+                <img src="https://images.unsplash.com/photo-1611416516289-9a2d4d7f4b6c" alt="Reservation">
+                <p>Call us at (123) 456-7890 or book online through our website.</p>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-item">
+                <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126" alt="Reviewer">
+                <p>"Amazing ambiance and delicious food. Highly recommend!" - Emily R.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Reach out for reservations or inquiries:</p>
+            <p>Email: contact@donkus.com | Phone: (123) 456-7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Donkus Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>
+
+Unfortunately, I can only produce two pages based on your instructions in a single response. If you need additional pages beyond "Home" and "Services" or require modifications, please request them individually, and I will assist you further.
+Certainly! Below is another page for the website, featuring the "About" section:
